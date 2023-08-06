@@ -82,6 +82,12 @@ body{
     display: flex;
     gap: 14px;
     font-size: 20px;
+    &>i:first-child{
+        font-size: 18px;
+        padding-top: 2px;
+        display: none;
+
+    }
 }
 .header-bottom{
     margin-top: 20px;
@@ -95,9 +101,153 @@ body{
     color: black;
     font-weight: 400;
 }
+.burger-icon{
+    font-size: 34px;
+    display: none;
+    cursor: pointer;
+}
+.left-nav{
+    display: flex;
+    gap: 40px;
+    text-align: center;
+    align-items: center;
+
+}
+@media screen and (max-width: 1025px) {
+    .header-top{
+        
+
+        .top{
+            display: none;
+        }
+        .bottom{
+
+            .burger-icon{
+                display: inline-block;
+            }
+            &>form{
+                display: none;
+            }
+
+        }
+
+    }
+    
+    .account{
+        display: none;
+    }
+    .icons{
+        &>i:first-child{
+            display: inline-block;
+
+        }
+        &>i:nth-child(3){
+
+            display: none;
+
+        }
+        
+    }    
+    #footer-nav-id{
+        .famous{
+            display: inline-block;
+            .famous-authors-grid{
+                grid-template-columns: auto auto;
+            }
+            .famous-books-grid{
+                grid-template-columns: auto auto;
+            }
+        }
+        .company-faq{
+            display: none;
+        }
+    }
+}
+@media screen and (max-width: 662px) {
+    .logo{
+        display: none;
+    }
+    
+
+}
+//header and footer responsibility ended
+
+@media screen and (max-width: 1025px) {
+    #sales-type-id{
+        margin-left: 15px;
+        gap: 0;
+        &>span{
+            width: 625px;
+            top: 60px;
+        }
+        &>ul{
+            padding: 0 20px;
+            &>li{
+                font-size: 30px;
+                
+            }
+            &>.underline{
+                top: 60px;
+                
+            }
+        }
 
 
+    }
 
+}
+@media screen and (max-width: 662px) {
+
+    #sales-type-id{
+        margin-left: 15px;
+        gap: 0;
+        &>span{
+            width: 325px;
+            top: 33px;
+        }
+        &>ul{
+            padding: 0 28px;
+            &>li{
+                font-size: 10px;
+                
+            }
+            &>.underline{
+                top: 33px;
+                
+            }
+        }
+        &>ul:nth-child(1):hover{
+            &>span{
+
+                width: 110px;
+                top: 33px;
+                left: 0px;
+            }
+        }
+        &>ul:nth-child(2):hover{
+            &>span{
+
+                width: 115px;
+                top: 33px;
+                left: 110px;
+            }
+        }
+        &>ul:nth-child(3):hover{
+            &>span{
+
+                width: 115px;
+                top: 33px;
+                left: 225px;
+            }
+        }
+
+    }
+}
+@media screen and (max-width: 362px) {
+    #sales-type-id{
+        display: none;
+    }
+}
 //ikinci section
   .sales-type{
     display: flex;

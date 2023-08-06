@@ -91,6 +91,11 @@ body {
   gap: 14px;
   font-size: 20px;
 }
+.icons > i:first-child {
+  font-size: 18px;
+  padding-top: 2px;
+  display: none;
+}
 
 .header-bottom {
   margin-top: 20px;
@@ -105,6 +110,114 @@ body {
   font-weight: 400;
 }
 
+.burger-icon {
+  font-size: 34px;
+  display: none;
+  cursor: pointer;
+}
+
+.left-nav {
+  display: flex;
+  gap: 40px;
+  text-align: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 1025px) {
+  .header-top .top {
+    display: none;
+  }
+  .header-top .bottom .burger-icon {
+    display: inline-block;
+  }
+  .header-top .bottom > form {
+    display: none;
+  }
+  .account {
+    display: none;
+  }
+  .icons > i:first-child {
+    display: inline-block;
+  }
+  .icons > i:nth-child(3) {
+    display: none;
+  }
+  #footer-nav-id .famous {
+    display: inline-block;
+  }
+  #footer-nav-id .famous .famous-authors-grid {
+    grid-template-columns: auto auto;
+  }
+  #footer-nav-id .famous .famous-books-grid {
+    grid-template-columns: auto auto;
+  }
+  #footer-nav-id .company-faq {
+    display: none;
+  }
+}
+@media screen and (max-width: 662px) {
+  .logo {
+    display: none;
+  }
+}
+@media screen and (max-width: 1025px) {
+  #sales-type-id {
+    margin-left: 15px;
+    gap: 0;
+  }
+  #sales-type-id > span {
+    width: 625px;
+    top: 60px;
+  }
+  #sales-type-id > ul {
+    padding: 0 20px;
+  }
+  #sales-type-id > ul > li {
+    font-size: 30px;
+  }
+  #sales-type-id > ul > .underline {
+    top: 60px;
+  }
+}
+@media screen and (max-width: 662px) {
+  #sales-type-id {
+    margin-left: 15px;
+    gap: 0;
+  }
+  #sales-type-id > span {
+    width: 325px;
+    top: 33px;
+  }
+  #sales-type-id > ul {
+    padding: 0 28px;
+  }
+  #sales-type-id > ul > li {
+    font-size: 10px;
+  }
+  #sales-type-id > ul > .underline {
+    top: 33px;
+  }
+  #sales-type-id > ul:nth-child(1):hover > span {
+    width: 110px;
+    top: 33px;
+    left: 0px;
+  }
+  #sales-type-id > ul:nth-child(2):hover > span {
+    width: 115px;
+    top: 33px;
+    left: 110px;
+  }
+  #sales-type-id > ul:nth-child(3):hover > span {
+    width: 115px;
+    top: 33px;
+    left: 225px;
+  }
+}
+@media screen and (max-width: 362px) {
+  #sales-type-id {
+    display: none;
+  }
+}
 .sales-type {
   display: flex;
   gap: 30px;
