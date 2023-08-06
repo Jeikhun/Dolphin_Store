@@ -8,10 +8,54 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="wrapper">
         <header class="header">
+            <div class="burger-menu-list " style="position: absolute; z-index: 30; background-color: whitesmoke; ">
+                <div style="display: flex; justify-content: space-between; padding: 18px;">
+                    <h3>Menu</h3>
+                    <i class="bi bi-x burger-close-btn"></i>
+                </div>
+
+                <div class="burger-acc">
+                    <div style="display: flex; justify-content: space-between;align-items: flex-end; padding: 17px;">
+                        <div style="display: flex; text-align: center; align-items: center;">
+                            <span style="background-color: rgb(12, 69, 245); padding: 16px 16px; border-radius: 100%; color: white; font-size: 20px;">CC</span>
+                            <div style="margin-left: 10px;" >
+                                <p style="text-align: start; font-size: 14px;">Xoş Gəldiniz</p>
+                                <h4 style="font-size: 18px;"> Ceyhun Cəlilov</h4>
+                            </div>
+                        </div>
+                        <i class="bi bi-box-arrow-right"></i>
+                    </div>
+                </div>
+                <div>
+                    <div class="burger-nav-items" style="display: flex; justify-content: space-between; padding: 26px 16px;">
+                        <h4>Kitab</h4>
+                        <i class="bi bi-chevron-right"></i>
+                    </div>
+                    <div class="burger-nav-items" style="display: flex; justify-content: space-between; padding: 26px 16px;">
+                        <h4>Oyuncaq</h4>
+                        <i class="bi bi-chevron-right"></i>
+                    </div>
+                    <div class="burger-contact">
+                        <h4>Bizi Izləyin</h4>
+                        <div class="burger-footer-icons">
+
+                            <i class="bi bi-facebook"></i>
+                            <i class="bi bi-instagram"></i>
+                            <i class="bi bi-whatsapp"></i>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
             <div class="header-top">
                 <div class="top">
                     <a href="#">Delfin-de satış edin</a>
@@ -22,6 +66,7 @@
                         <li>Əlaqə</li>
                     </ul>
                 </div>
+
                 <div class="bottom">
                     <div class="left-nav">
                         
@@ -48,8 +93,45 @@
                             <i class="bi bi-bag-check"></i>
                         </div>
                     </div>
+                    <div class="client-info" style="box-shadow: 0px 0px 67px -16px rgba(166, 166, 166, 0.39); border-radius: 20px; position: absolute; z-index: 1;  background-color: white;  right: 60px;">
+                        <div style="display: flex;padding: 15px; justify-content: space-between; align-items:self-end;">
+                            <div style="display: flex; gap: 10px; align-items: center;">
+                                <span style="background-color: #0C45F5; ; padding: 16px; border-radius: 100%; font-size: 20px; color: white;">CC</span>
+                                <div>
+                                    <p>Xoş Gəldiniz</p>
+                                    <h4>Ceyhun Cəlilov</h4>
+                                </div>
+
+                            </div>
+                            <i class="bi bi-box-arrow-right"></i>
+                        </div>
+                        <div style="background-color: #f5f5f5;padding: 15px; border-end-start-radius: 20px; border-end-end-radius: 20px;">
+                            <div class="client-acc-navigation">
+                                <div>
+                                    <p>Siparişlerim</p>
+                                    <i class="bi bi-chevron-right"></i>
+                                </div>
+                                <div>
+                                <p>Adreslərim</p>
+                                <i class="bi bi-chevron-right"></i>
+                                </div>
+                                <div>
+                                    <p>Hesab Məlumatlarım</p>
+                                    <i class="bi bi-chevron-right"></i>
+                                </div>
+                                <div>
+                                    <p>Şifrə Dəyişdirmək</p>
+                                    <i class="bi bi-chevron-right"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+
+                        </div>
+                    </div>
                 </div>
             </div>
+            
             <div class="header-bottom">
                         <a href="#">
                             <span>Kitab</span>
@@ -347,13 +429,13 @@
             <div class="footer-nav" id="footer-nav-id">
                 <div class="company-faq">
                     <div>
-                        <h2>Şirkət</h2>
+                        <h2 style="margin-bottom: 19px;">Şirkət</h2>
                         <p>Biz kimik?</p>
                         <p>Delfin-de satış edin</p>
                         <p>Əlaqə</p>
                     </div>
                     <div>
-                        <h2>Kömək</h2>
+                        <h2 style="margin-bottom: 19px;">Kömək</h2>
                         <p>Çatdırılma</p>
                         <p>Ödəmə</p>
                     </div>
@@ -362,7 +444,7 @@
 
                     <div class="famous">
                         <div class="famous-authors">
-                            <h2>Məşhur Yazarlar</h2>
+                            <h2 style="margin-bottom: 19px;">Məşhur Yazarlar</h2>
                             <div class="famous-authors-grid">
     
                                 <p>Osho</p>
@@ -380,7 +462,7 @@
                             </div>
                         </div>
                         <div class="famous-books">
-                            <h2>Məşhur Kitablar</h2>
+                            <h2 style="margin-bottom: 19px;">Məşhur Kitablar</h2>
                             <div class="famous-books-grid">
                                 <p>The fault in Our Stars</p>
                                 <p>The Goldfinch</p>
@@ -395,7 +477,7 @@
             <div class="contact-us">
 
                 <div class="working-time">
-                    <div class="contact-phone">
+                    <div class="contact-phone" style="margin-bottom: 40px;">
                         <i class="bi bi-telephone"></i>
                         <h6>Əlaqə</h6>
                     </div>
