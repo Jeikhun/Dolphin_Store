@@ -319,6 +319,9 @@ body{
     }
 
 }
+
+
+//bookDetails
 .book-info-sec{
     display: flex;
     gap: 26px;
@@ -360,6 +363,12 @@ body{
         display: flex;
         flex-direction: column;
         gap: 10px;
+    }
+    .info-publisher{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
     }
     .select-container{
         width: fit-content;
@@ -418,6 +427,9 @@ body{
 
             }
         }
+    .book-price-two{
+        display: none;
+    }
     }
     .book-seller{
         display: flex; 
@@ -440,6 +452,52 @@ body{
         }
         #buy-book{
             width: 230px;
+        }
+    }
+}
+@media screen and (max-width: 1024px) {
+    .book-info-sec{
+        flex-direction: column;
+        padding: 0px 25px;
+        margin-bottom: 30px;
+
+    }
+    .book-price-one{display: none;}
+    .book-price-two{display: initial !important;}
+    #buy-book{
+        width: 100svw;
+    }
+    .buy-book-btn{
+        display: flex;
+        align-items: center;
+        position: fixed;
+        bottom: 0px;
+        gap: 25px;
+        background-color: #f5f5f5;
+        padding: 15px 20px;
+        width: 900px;
+        width: -webkit-fill-available !important;
+        &>button{
+            width: -webkit-fill-available;
+            &>p{
+                margin: auto;
+            }
+        }
+    }
+    .book-picture{
+        text-align: center;
+        &>img{
+            width: 135px;
+            height: 210px;
+        }
+    }
+    .info-publisher{
+        display: flex;
+        flex-direction: row !important;
+        gap: 15px !important;
+        align-items: center !important;
+        &>h5{
+            font-size: 23px;
         }
     }
 }

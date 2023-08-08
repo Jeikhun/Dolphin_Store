@@ -358,6 +358,11 @@ body {
   flex-direction: column;
   gap: 10px;
 }
+.info-title .info-publisher {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
 .info-title .select-container {
   width: -moz-fit-content;
   width: fit-content;
@@ -415,6 +420,9 @@ body {
 .buy-book .buy-book-btn > button:hover {
   cursor: pointer;
 }
+.buy-book .buy-book-btn .book-price-two {
+  display: none;
+}
 .buy-book .book-seller {
   display: flex;
   align-items: center;
@@ -436,5 +444,55 @@ body {
   }
   .buy-book #buy-book {
     width: 230px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .book-info-sec {
+    flex-direction: column;
+    padding: 0px 25px;
+    margin-bottom: 30px;
+  }
+  .book-price-one {
+    display: none;
+  }
+  .book-price-two {
+    display: initial !important;
+  }
+  #buy-book {
+    width: 100svw;
+  }
+  .buy-book-btn {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    bottom: 0px;
+    gap: 25px;
+    background-color: #f5f5f5;
+    padding: 15px 20px;
+    width: 900px;
+    width: -webkit-fill-available !important;
+  }
+  .buy-book-btn > button {
+    width: -webkit-fill-available;
+  }
+  .buy-book-btn > button > p {
+    margin: auto;
+  }
+  .book-picture {
+    text-align: center;
+  }
+  .book-picture > img {
+    width: 135px;
+    height: 210px;
+  }
+  .info-publisher {
+    display: flex;
+    flex-direction: row !important;
+    gap: 15px !important;
+    align-items: center !important;
+  }
+  .info-publisher > h5 {
+    font-size: 23px;
   }
 }/*# sourceMappingURL=bookDetails.css.map */
