@@ -256,7 +256,7 @@ body {
 
 .site-about {
   display: flex;
-  padding: 30px 0px;
+  padding: 35px 0px;
   justify-content: space-around;
 }
 
@@ -321,7 +321,7 @@ body {
 .book-info-sec {
   display: flex;
   gap: 26px;
-  padding-top: 34px;
+  padding-top: 45px;
   justify-content: center;
 }
 
@@ -450,7 +450,6 @@ body {
 @media screen and (max-width: 1024px) {
   .book-info-sec {
     flex-direction: column;
-    padding: 0px 25px;
     margin-bottom: 30px;
   }
   .book-price-one {
@@ -494,5 +493,8 @@ body {
   }
   .info-publisher > h5 {
     font-size: 23px;
+  }
+  footer {
+    margin-bottom: 60px;
   }
 }/*# sourceMappingURL=bookDetails.css.map */
