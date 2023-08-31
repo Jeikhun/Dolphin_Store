@@ -81,3 +81,20 @@ personIcon.addEventListener("click", ()=>{
         clientInfo.style.display = "initial";
     }
 })
+
+let accountBtn = document.querySelector(".account");
+
+accountBtn.addEventListener("click", ()=>{
+    if(clientInfo.style.display == "initial"){
+        
+        clientInfo.style.display = "none";
+    }else{
+
+        clientInfo.style.display = "initial";
+    }
+
+
+})
+
+console.log(window.innerWidth);
+console.log(screen.availWidth.valueOf);

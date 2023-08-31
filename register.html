@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&display=swap" rel="stylesheet">
+    
+
+    <link rel="stylesheet" href="./css/bookDetails.css" />
+    <link rel="stylesheet" href="./register.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div
+          class="burger-menu-list"
+          style="position: absolute; z-index: 30; background-color: whitesmoke"
+        >
+          <div
+            style="display: flex; justify-content: space-between; padding: 18px"
+          >
+            <h3>Menu</h3>
+            <i class="bi bi-x burger-close-btn"></i>
+          </div>
+
+          <div class="burger-acc">
+            <div
+              style="
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-end;
+                padding: 17px;
+              "
+            >
+              <div
+                style="display: flex; text-align: center; align-items: center"
+              >
+                <span
+                  style="
+                    background-color: rgb(12, 69, 245);
+                    padding: 16px 16px;
+                    border-radius: 100%;
+                    color: white;
+                    font-size: 20px;
+                  "
+                  >CC</span
+                >
+                <div style="margin-left: 10px">
+                  <p style="text-align: start; font-size: 14px">Xoş Gəldiniz</p>
+                  <h4 style="font-size: 18px">Ceyhun Cəlilov</h4>
+                </div>
+              </div>
+              <i class="bi bi-box-arrow-right"></i>
+            </div>
+          </div>
+          <div>
+            <div
+              class="burger-nav-items"
+              style="
+                display: flex;
+                justify-content: space-between;
+                padding: 26px 16px;
+              "
+            >
+              <h4>Kitab</h4>
+              <i class="bi bi-chevron-right"></i>
+            </div>
+            <div
+              class="burger-nav-items"
+              style="
+                display: flex;
+                justify-content: space-between;
+                padding: 26px 16px;
+              "
+            >
+              <h4>Oyuncaq</h4>
+              <i class="bi bi-chevron-right"></i>
+            </div>
+            <div class="burger-contact">
+              <h4>Bizi Izləyin</h4>
+              <div class="burger-footer-icons">
+                <i class="bi bi-facebook"></i>
+                <i class="bi bi-instagram"></i>
+                <i class="bi bi-whatsapp"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header-top">
+          <div class="top">
+            <a href="#">Delfin-de satış edin</a>
+            <div>20AZN Üstü Alışverişə Kargo Pulsuz</div>
+            <ul class="about">
+              <li>Kampaniyalar</li>
+              <li>Siparişini izlə</li>
+              <li>Əlaqə</li>
+            </ul>
+          </div>
+
+          <div class="bottom">
+            <div class="left-nav">
+              <div class="burger-icon">
+                <i class="bi bi-list-nested"></i>
+              </div>
+              <a href="#" class="logo">
+                <img
+                  src="./images/image-04-08-23-15-05 (2)-modifieddddd (2).png"
+                  alt=""
+                />
+              </a>
+            </div>
+            <form action="" class="search">
+              <input type="text" placeholder="Kitab yaxud Müəllifin adı" />
+              <i class="bi bi-search search-logo"></i>
+            </form>
+            <div class="icon-container">
+              <div class="account">
+                <span>Hesabım</span>
+                <span class="acc-name">Ceyhun Celilov</span>
+              </div>
+              <div class="icons">
+                <i class="bi bi-search"></i>
+                <i class="bi bi-person"></i>
+                <i class="bi bi-heart"></i>
+                <i class="bi bi-bag-check"></i>
+              </div>
+            </div>
+            <div
+              class="client-info"
+              style="
+                box-shadow: 0px 0px 67px -16px rgba(166, 166, 166, 0.39);
+                border-radius: 20px;
+                position: absolute;
+                z-index: 1;
+                background-color: white;
+                right: 60px;
+              "
+            >
+              <div
+                style="
+                  display: flex;
+                  padding: 15px;
+                  justify-content: space-between;
+                  align-items: self-end;
+                "
+              >
+                <div style="display: flex; gap: 10px; align-items: center">
+                  <span
+                    style="
+                      background-color: #0c45f5;
+                      padding: 16px;
+                      border-radius: 100%;
+                      font-size: 20px;
+                      color: white;
+                    "
+                    >CC</span
+                  >
+                  <div>
+                    <p>Xoş Gəldiniz</p>
+                    <h4>Ceyhun Cəlilov</h4>
+                  </div>
+                </div>
+                <i class="bi bi-box-arrow-right"></i>
+              </div>
+              <div
+                style="
+                  background-color: #f5f5f5;
+                  padding: 15px;
+                  border-end-start-radius: 20px;
+                  border-end-end-radius: 20px;
+                "
+              >
+                <div class="client-acc-navigation">
+                  <div>
+                    <p>Siparişlerim</p>
+                    <i class="bi bi-chevron-right"></i>
+                  </div>
+                  <div>
+                    <p>Adreslərim</p>
+                    <i class="bi bi-chevron-right"></i>
+                  </div>
+                  <div>
+                    <p>Hesab Məlumatlarım</p>
+                    <i class="bi bi-chevron-right"></i>
+                  </div>
+                  <div>
+                    <p>Şifrə Dəyişdirmək</p>
+                    <i class="bi bi-chevron-right"></i>
+                  </div>
+                </div>
+              </div>
+              <div></div>
+            </div>
+            <div class="basket-container">
+              <div>
+                <div class="basket-header">
+                  <div class="basket-info">
+                    <h5>Səbətim</h5>
+                    <p>(2 məhsul)</p>
+                  </div>
+                  <i class="bi bi-x burger-close-button"></i>
+                </div>
+                <div class="basket-books">
+                  <div>
+                    <div class="basket-books-contain">
+                      <div class="basket-img-container">
+                        <img
+                          src="https://image01.idefix.com/resize/165/0/product/380491/aybino-ofke-sehri-egitici-oyun-645cf4a18e4a7.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div>
+                        <p>Öfke Eğitimi</p>
+                        <h6>Ədəd: <span>1</span></h6>
+                        <h5>26AZN</h5>
+                      </div>
+                    </div>
+                    <i class="bi bi-trash"></i>
+                  </div>
+                  <div>
+                    <div class="basket-books-contain">
+                      <div class="basket-img-container">
+                        <img
+                          src="https://image01.idefix.com/resize/165/0/product/380491/aybino-ofke-sehri-egitici-oyun-645cf4a18e4a7.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div>
+                        <p>Öfke Eğitimi</p>
+                        <h6>Ədəd: <span>1</span></h6>
+                        <h5>26AZN</h5>
+                      </div>
+                    </div>
+                    <i class="bi bi-trash"></i>
+                  </div>
+                  <div>
+                    <div class="basket-books-contain">
+                      <div class="basket-img-container">
+                        <img
+                          src="https://image01.idefix.com/resize/165/0/product/380491/aybino-ofke-sehri-egitici-oyun-645cf4a18e4a7.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div>
+                        <p>Öfke Eğitimi</p>
+                        <h6>Ədəd: <span>1</span></h6>
+                        <h5>26AZN</h5>
+                      </div>
+                    </div>
+                    <i class="bi bi-trash"></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="basket-footer">
+                <div class="basket-price">
+                  <h3>Toplam</h3>
+                  <h3>76AZN</h3>
+                </div>
+                <div class="basket-nav-btn">
+                  <button>
+                    <a href=""> Səbətə Get </a>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="header-bottom">
+          <a href="#">
+            <span style="font-size: 19px">Kitab</span>
+          </a>
+          <a href="#">
+            <span style="font-size: 19px">Oyuncaq</span>
+          </a>
+        </div>
+      </header>
+
+      <section class="order-details-wrapper">
+        <div class="order-details-container">
+            <div class="order-details-nav">
+                <div class="OD-client-info">
+                    <span>CC</span>
+                    <div class="client-name">
+                        <p>Ceyhun Celilov</p>
+                        <a href="">
+    
+                            <h6>Çıxış</h6>
+                        </a>
+                    </div>
+                </div>
+                <div class="nav">
+                    <div class="nav-element">
+                        <p>Sifarişlərim</p>
+                        <i class="bi-chevron-right"></i>
+                    </div>
+                    <div class="nav-element">
+                        <p>Bildirimlər</p>
+                        <i class="bi-chevron-right"></i>
+                    </div>
+                    <div class="nav-element">
+                        <p>Listlərim</p>
+                        <i class="bi-chevron-right"></i>
+                    </div>
+                    <div class="nav-element">
+                        <p>Qiymətləndirmələr</p>
+                        <i class="bi-chevron-right"></i>
+                    </div>
+                    <div class="nav-element">
+                        <p>Suallarım</p>
+                        <i class="bi-chevron-right"></i>
+                    </div>
+                    <div class="nav-element">
+                        <p>İzlədiyim Satıcılar</p>
+                        <i class="bi-chevron-right"></i>
+                    </div>
+                    <div class="nav-element">
+                        <p>Adreslərim</p>
+                        <i class="bi-chevron-right"></i>
+                    </div>
+                    <div class="nav-element">
+                        <p>Bilgilərim</p>
+                        <i class="bi-chevron-right"></i>
+                    </div>
+                    <div class="nav-element">
+                        <p>Şifrə Dəyişdirmək</p>
+                        <i class="bi-chevron-right"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="order-details">
+                <div class="table-wrapper">
+                    <div class="OD-search">
+                        <div class="search-wrapper">
+                            <input type="text" placeholder="Sifarişlərimdə Axtar">
+                            <i class="bi bi-search search-logo"></i>
+                        </div>
+                        <div class="detail-type">
+                            <span>Bütün Sifarişlər</span>
+                            <span>Ləğv Olunanlar</span>
+                            <span>Davam Edənlər</span>
+                        </div>
+                    </div>
+                    <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col">Kodu</th>
+                            <th scope="col">Tarixi</th>
+                            <th scope="col">Sayı</th>
+                            <th scope="col">Məbləği</th>
+                            <th scope="col">Statusu</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>11.01.2023</td>
+                            <td>7</td>
+                            <td>70.8 <span>₼</span></td>
+                            <td>Təhvil Verildi</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+      <footer>
+        <div class="follow">
+          <span>Bizi Izləyin</span>
+          <div>
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-instagram"></i>
+            <i class="bi bi-whatsapp"></i>
+          </div>
+        </div>
+        <div class="footer-nav" id="footer-nav-id">
+          <div class="company-faq">
+            <div>
+              <h2 style="margin-bottom: 19px">Şirkət</h2>
+              <p>Biz kimik?</p>
+              <p>Delfin-de satış edin</p>
+              <p>Əlaqə</p>
+            </div>
+            <div>
+              <h2 style="margin-bottom: 19px">Kömək</h2>
+              <p>Çatdırılma</p>
+              <p>Ödəmə</p>
+            </div>
+          </div>
+          <div class="last-company-faq">
+            <div class="famous">
+              <div class="famous-authors">
+                <h2 style="margin-bottom: 19px">Məşhur Yazarlar</h2>
+                <div class="famous-authors-grid">
+                  <p>Osho</p>
+                  <p>Dan Brown</p>
+                  <p>Jane Austen</p>
+                  <p>Leo Tolstoy</p>
+                  <p>George Orwell</p>
+                  <p>Mark Twain</p>
+                  <p>Çingiz Abdullayev</p>
+                  <p>Elxan Elatlı</p>
+                  <p>Fyodr Dostoyevski</p>
+                  <p>William Shakespeare</p>
+                  <p>Sabahattin Ali</p>
+                  <p>Stefan Zweig</p>
+                </div>
+              </div>
+              <div class="famous-books">
+                <h2 style="margin-bottom: 19px">Məşhur Kitablar</h2>
+                <div class="famous-books-grid">
+                  <p>The fault in Our Stars</p>
+                  <p>The Goldfinch</p>
+                  <p>The Sympathizer</p>
+                  <p></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contact-us">
+          <div class="working-time">
+            <div class="contact-phone" style="margin-bottom: 40px">
+              <i class="bi bi-telephone"></i>
+              <h6>Əlaqə</h6>
+            </div>
+            <h6>+994 70 897 89 97</h6>
+            <p>Bazarertəsi-Bazar|08:00-00:00</p>
+          </div>
+        </div>
+        <div class="site-about">
+          <p>© 2023 Dolphin.az All Rights Reserved</p>
+          <p>Development by JJ</p>
+          <p>UX/UI design by JJ</p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="./js/bookDetails.js"></script>
+  </body>
+</html>

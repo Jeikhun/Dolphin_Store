@@ -78,7 +78,8 @@ body{
     display: flex;
     flex-direction: column;
     gap: 0px;
-    font-size: 14px
+    font-size: 14px;
+    cursor: pointer;
 }
 .account>span:first-child{
     font-weight: bold;
@@ -87,6 +88,9 @@ body{
     display: flex;
     gap: 14px;
     font-size: 20px;
+    &>i{
+        cursor: pointer;
+    }
     &>i:first-child{
         font-size: 18px;
         padding-top: 2px;
@@ -319,50 +323,251 @@ body{
 
 }
 //header&footer end
-
-
-.book-filter{
-    max-width: 1480px ;
-    margin: auto;
-    &>div{
-        margin-bottom: 40px;
+.book-page-header{
+    padding: 0px 54px;
+    margin-bottom: 40px;
         display: flex;
         justify-content: space-between;
+}
+.book-page-header{
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
 
-        .search-result{
-            display: flex;
-            align-items: baseline;
-            gap: 15px;
-        }
-        .search-sort{
-            display: flex;
-            align-items: center;
-            gap: 15px;
-        }
+    .search-result{
+        display: flex;
+        align-items: baseline;
+        gap: 15px;
     }
+    .search-sort{
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+}
+.book-filter{
+    max-width: 1480px ;
+    
     .filter{
         display: flex;
         flex-direction: column;
+        width: 260px;
         .filter-type{
             
-            width: 260px;
             display: flex;
             justify-content: space-between;
             padding: 16px 0px;
             
         }
         .filter-aze{
-            width: 245px;
             display: flex;
             justify-content: space-between;
             padding: 16px 0px;
             padding-left: 15px;
         }
         .filter-language-type{
-            width: 230px;
             padding: 16px 0px;
             padding-left: 30px;
         }
     }
 
+}
+
+.filter-and-grid{
+    display: flex;
+    justify-content: space-around;
+    padding-right: 6rem;
+    padding-left: 2.8rem;
+}
+
+.filter{
+
+
+
+    & li{
+        text-decoration: none;
+        list-style: none;
+    }
+    & a{
+        text-decoration: none;
+        color: black;
+    }
+    .cat-item-2{
+        display: flex;
+        justify-content: space-between;
+    }
+    .cat-item>div{
+        padding-bottom: 16px;
+    }
+    .children1>li>div{
+        padding-bottom: 16px;
+    }
+    .children1{
+        display: none;
+        padding-left: 15px;
+        &>li>ul>li{
+            padding-bottom: 16px;
+        }
+        &>.cat-item>div{
+            display: flex;
+            justify-content: space-between;
+
+        }
+        &>.cat-item>ul{
+            padding-left: 15px;
+        }
+
+
+    }
+    .toggle-button>i:last-child{
+        display: none;
+    }
+    .authors-form{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        &>label{
+            display: flex;
+            gap: 16px;
+            &>input{
+                width: 16px;
+                height: 16px;
+            }
+            &>span{
+                font-size: 17px;
+            }
+        }
+    }
+}
+
+.books-grid{
+    display: grid;
+    // grid-template-columns: auto auto auto auto;
+    grid-template-columns: repeat(4,minmax(0,1fr));
+    column-gap: 6rem;
+    & a{
+        text-decoration: none;
+    }
+}
+.book-carousel-image{
+    display: inline-block;
+}
+#book-carousel-first{
+    padding: 10px 20px 40px 15px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    text-align: center;
+    width: fit-content;
+    &>img{
+     align-items: center;
+     text-align: center;
+    }
+    &:hover{
+     -webkit-box-shadow: 0px 0px 67px -16px rgba(166,166,166,0.39);
+     -moz-box-shadow: 0px 0px 67px -16px rgba(166,166,166,0.39);
+     box-shadow: 0px 0px 67px -16px rgba(166,166,166,0.39);
+
+     .basket-button>button{
+        visibility: inherit;
+         display: block;
+         bottom: -58px;
+     }
+    }
+    
+ }
+
+ .book-carousel-detail{
+    
+    text-align: start;
+    align-items: start;
+    
+    &>h5:first-child{
+        color: black;
+        margin: 0;
+        margin-top: 20px;
+        padding-bottom: 10px;
+        font-size: 15px;
+        white-space: nowrap;
+       width: 160px;
+       overflow: hidden;
+       text-overflow: ellipsis;
+    }
+    &>p{
+        
+        color: black;
+       margin: 0;
+       margin-top: 5px;
+       font-size: 15px;
+       white-space: nowrap;
+       width: 160px;
+       overflow: hidden;
+       text-overflow: ellipsis;
+    }
+    &>h5:last-child{
+        
+        color: black;
+        margin-top: 10px;
+    }
+}
+
+ .basket-button{
+    position: relative;
+   text-align: center;
+   &>button{
+    z-index: -1;
+    position: absolute;
+    bottom: -150px;
+    left: 22px;
+    color: black;
+    background-color: #07bc0c;
+    border: none;
+    width: 120px;
+    height: 34px;
+    border-radius: 5px;
+    transition: 0.3s;
+    cursor: pointer;
+    &>p{
+        margin: 0;
+    }
+   }
+}
+@media screen and (max-width: 1280px) {
+
+    .books-grid{
+        
+        grid-template-columns: repeat(3,minmax(0,1fr));
+    }
+    .filter-and-grid{
+        padding-right: 4rem;
+        gap: 30px;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .book-filter{
+        display: none;
+    }
+    .book-carousel-image>img{
+        width: 90px!important;
+        height: 140px!important;
+    }
+    .basket-button{
+        display: none;
+    }
+    .book-carousel-detail > h5:first-child{
+        font-size: 14px;
+    }
+    .book-carousel-detail > p{
+        font-size: 10px;
+    }
+    
+    .book-carousel-detail > h5:last-child {
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .books-grid{
+        
+        grid-template-columns: repeat(2,minmax(0,1fr));
+        color: red;
+    }
 }

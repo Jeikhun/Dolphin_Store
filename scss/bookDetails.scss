@@ -78,7 +78,8 @@ body{
     display: flex;
     flex-direction: column;
     gap: 0px;
-    font-size: 14px
+    font-size: 14px;
+    cursor: pointer;
 }
 .account>span:first-child{
     font-weight: bold;
@@ -87,6 +88,9 @@ body{
     display: flex;
     gap: 14px;
     font-size: 20px;
+    &>i{
+        cursor: pointer;
+    }
     &>i:first-child{
         font-size: 18px;
         padding-top: 2px;
@@ -319,6 +323,103 @@ body{
 
 }
 
+//basket-start
+.basket-container{
+    display: flex;
+    flex-direction: column;
+    width: 380px;
+    height: 480px;
+    justify-content: space-between;
+    position: absolute;
+    right: 3%;
+    top: 115px;
+    background-color: white;
+    border-radius: 20px;
+    -webkit-box-shadow: 0px 0px 67px -16px rgba(166,166,166,0.39);
+    -moz-box-shadow: 0px 0px 67px -16px rgba(166,166,166,0.39);
+    box-shadow: 0px 0px 67px -16px rgba(166,166,166,0.39);
+    display: none;
+    .basket-header{
+        padding: 20px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        &>div{
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            &>p{
+                font-size: 10px;
+            }
+
+        }
+        &>i{
+            font-size: 25px
+        }
+    }
+    .basket-books{
+        padding: 20px 30px;
+        display: flex;
+        gap: 30px;
+        flex-direction: column;
+        overflow-y: scroll;
+        max-height: 261px;
+        .basket-img-container{
+            border: 1px solid rgb(221, 221, 221);
+            & img{
+                width: 90px;
+                height: 90px;
+                object-fit: contain;
+                
+            }
+        }
+        &>div{
+            display: flex;
+            gap: 100px;
+        }
+        & .basket-books-contain{
+            display: flex;
+            gap: 12px;
+            & p{
+                font-size: 14px;
+                margin-bottom: 4px;
+            }
+            & h6{
+                font-size: 12px;
+                margin-bottom: 14px;
+                &>span{
+                    font-weight: 400;
+                }
+            }
+            & h5{
+                font-size: 20px;
+            }
+        }
+    }
+    .basket-footer{
+        
+        padding: 20px 30px;
+        .basket-price{
+            display: flex;
+            justify-content: space-between;
+        }
+        .basket-nav-btn{
+            margin-top: 20px;
+            &>button{
+                width: fit-content;
+                background-color: #0C45F5;
+                border: none;
+                padding: 12px 123px;
+
+                &>a{
+                    text-decoration: none;
+                    color: white;
+                }
+            }
+        }
+    }
+}//basket-end
 
 //bookDetails
 .book-info-sec{
@@ -444,6 +545,11 @@ body{
         .buy-book-btn>button{
             padding: 14px 8vw;
         }
+        
+    .book-seller{
+        flex-direction: column;
+        gap: 10px;
+    }
     }
     @media screen and (max-width: 1070px) {
         .buy-book-btn>button{
