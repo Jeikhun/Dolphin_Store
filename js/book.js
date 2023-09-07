@@ -93,3 +93,27 @@ searchInput.addEventListener("keyup", ()=>{
 
 });
 
+
+let basketBtn = document.querySelector(".bi-bag-check");
+let basketContainer = document.querySelector(".basket-container");
+basketBtn.addEventListener("click", ()=>{
+    
+    if(window.innerWidth>=1280){
+        
+        basketContainer.style.display = "flex";
+        
+    }
+    else if(window.innerWidth<1280){
+
+    }
+})
+let closeBurgerBtn = document.querySelector(".burger-close-button");
+closeBurgerBtn.addEventListener("click", ()=>{
+    
+    basketContainer.style.display="none";
+})
+if(window.innerWidth<1280){
+    
+    basketContainer.style.display="none";
+}
+
